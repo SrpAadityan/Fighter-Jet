@@ -1,0 +1,105 @@
+.hero {
+    background: #202020;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 15vw;
+    margin: 0;
+    font-family: 'frozen', serif;
+    font-weight: 700;
+    outline: none;
+}
+
+
+h1 {
+      background: url(/asserts/img/gradient.jpg);
+      -webkit-background-clip: text;
+      background-size: contain;
+      width: 100%;
+      text-align: center;
+      color: transparent;
+      font-weight: 900;
+  }
+      
+h1::before {
+          content: attr(data-heading);
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+          -webkit-background-clip: text;
+          color: transparent;
+          mix-blend-mode: screen;
+          animation: shine 1s infinite;
+          background-size: 200%;
+          text-shadow: 
+              2px 2px 10px rgba(#000, 0.2),
+              -2px 2px 10px rgba(#000, 0.2),
+              -2px -2px 10px rgba(#000, 0.2);
+      }
+  
+  
+  @keyframes shine {
+      0% {background-position: -100%;}
+      100% {background-position: 100%;}
+  }
+  
+  @font-face {
+    font-family:'frozen'; 
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+
+.start {
+    margin: 1rem 20vw 0rem 40vw;
+    overflow: hidden;
+    display: block;
+} 
+   
+ 
+.start :hover {
+  transform: scale(1.1);
+  transition: 1s;
+        
+}
+
+h2{
+  margin: 35vh 29rem auto 29rem;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;}
+
+
+table{
+  margin: 2vh 20rem auto 22.5rem;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-style:solid;border-width:0px;font-family: 'Courier New', Courier, monospace;font-size:14px;overflow:hidden;
+  padding:10px 20px;word-break:normal;}
+.tg th{border-style:solid;border-width:0px;font-family: 'Courier New', Courier, monospace;font-size:14px;font-weight:normal;
+  overflow:hidden;padding:10px 20px;word-break:normal;}
+.tg .tg-b4k9{border-color:#ffffff;color:#ffffff;font-family: 'Courier New', Courier, monospace;
+  font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-y1mw{border-color:#ffffff;color:#ffffff;font-family: 'Courier New', Courier, monospace;
+  font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+ 
+.credits {
+    margin: 0 0 0 39vw;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+     
+  }
+
+a {
+    color: orangered;         
+  }
